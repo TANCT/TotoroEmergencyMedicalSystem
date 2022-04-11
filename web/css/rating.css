@@ -1,0 +1,61 @@
+.rating-search
+{
+    margin:auto;
+    left:0;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+    text-align: center;
+}
+.rating-main
+{
+    margin:auto;
+    width: 90%;
+    height: fit-content;
+    background-color: #E1F3FF;
+    position: absolute;
+    z-index: 0;
+    left: 5%;
+    padding: 50px;
+    
+}
+.rating-hospital
+{
+    text-align: center;
+    border-bottom: solid gray 1px;
+}
+.rating-box
+{
+    display: flex;
+    padding: 20px;
+    border-bottom: solid gray 1px;
+}
+.rating-photo
+{
+    width: 30%;
+    text-align: center;
+}
+.rating-info
+{
+    width: 70%;
+}
+
+.rating-create
+{
+    
+}
+.rating-create .username
+{
+    text-align: center;
+}
+.rating-create table,
+.rating-create th,
+.rating-create td
+{
+    font-size: large;
+    border: none;
+    text-align: left;
+    margin: auto;
+    line-height: 1.5;
+    padding:10px;
+}

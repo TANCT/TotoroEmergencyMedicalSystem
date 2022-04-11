@@ -1,0 +1,230 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+body {
+ font-family: cursive;
+ 
+}
+a {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+ font-family: 'Roboto Slab', serif;
+}
+
+.navbar {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 10px;
+ background-color: #00b1d2;
+ color: #fff;
+ position: fixed;
+ width: 100%;
+ top: 0;
+ left: 0;
+}
+
+
+.nav-items{
+    display:flex;
+    justify-content: end;
+}
+.nav-links a {
+ color: #fff;
+}
+/* LOGO */
+
+/* NAVBAR MENU */
+.menu {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+.noti {
+ display: flex;
+ gap: 1em;
+ font-size: 18px;
+}
+
+.noti li:hover{
+    /*background-color: #00b1d2;*/
+    /*border-radius: 5px;*/
+    /*transition: 0.3s ease;*/
+}
+.menu li:hover {
+ background-color: #00b1d2;
+ border-radius: 5px;
+ /*transition: 0.3s ease;*/
+}
+
+.noti li{
+   padding: 5px 14px; 
+}
+.menu li {
+ padding: 5px 14px;
+}
+/* DROPDOWN MENU */
+.services {
+ position: relative; 
+}
+
+.notilist{
+    position:relative;
+}
+.dropdown {
+ background-color: #00b1d2;
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ border:1px solid white;
+ top: 50px;
+
+}
+
+.notidropdown{
+/*background-color: #00b1d2;*/
+ padding: 1em 0;
+ position: absolute; /*WITH RESPECT TO PARENT*/
+ display: none;
+ border-radius: 8px;
+ border:1px solid white;
+ top: 50px;
+ left:-320px;
+}
+.dropdown li + li {
+ margin-top: 10px;
+}
+.notidropdown li+li{
+    margin-top:10px;
+}
+.notidropdown{
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 400px; 
+}
+.notidropdown li:hover{
+    /*background-color: #00b1d2;*/ 
+}
+.dropdown li{
+    padding: 0.5em 1em;
+    text-align: center;
+    width: 200px; 
+}
+
+.dropdown li:hover {
+ background-color: #00b1d2;
+}
+
+.notidropdown li{
+     color: #fff;
+}
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+.hidden{
+ display: none;
+} 
+/*HAMBURGER MENU*/
+.hamburger {
+ display: none;
+ font-size: 24px;
+ user-select: none;
+}
+.notification{
+  position: relative;
+  display: inline-block;
+  padding-top: 7px;
+  padding-right:10px;
+}
+.notification .badge {
+  position: absolute;
+  top: -10px;
+  right:-0.5px;
+  margin-right: 3px;
+  padding: 0.01px 4px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+footer{
+  position: fixed;
+  padding:10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  border:1px ridge;
+}
+@media (min-width: 768px){
+.logo{
+    font-size: 28px;
+} 
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+.menu { 
+ display:none;
+ position: absolute;
+ background-color:#00b1d2;
+ right: 0;
+ left: 0;
+ text-align: center;
+ padding: 16px 0;
+ 
+}
+.logo{
+    font-size: 20px;
+}
+.menu li{
+    border-bottom: 1px solid white;
+}
+.menu li:hover {
+ display: inline-block;
+ background-color:#00b1d2;
+ transition: 0.3s ease;
+ 
+}
+
+.menu li + li {
+ margin-top: 12px;
+ 
+}
+input[type="checkbox"]:checked ~ .menu{
+ display: block;
+ top:65px;
+ 
+}
+
+.hamburger {
+ display: block;
+}
+
+.services.dropdown {
+ left: 50%;
+ top: 40px;
+ transform: translateX(35%);
+ 
+}
+
+.notilist.notidropdown{
+    
+    
+    top:40px;
+    transform: translateX(-100px);
+}
+.dropdown li:hover {
+ background-color: #00b1d2;
+ 
+}
+.notidropdown li:hover {
+ background-color: #00b1d2;
+ 
+}
+}
